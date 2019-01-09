@@ -6,7 +6,7 @@ def surfaceArea(A):
 
     for i in range(H):
         for j in range(W):
-            for a, b in [[-1, 0], [1, 0], [0, -1], [0, 1]]:
+            for a, b in ((-1, 0), (1, 0), (0, -1), (0, 1)):
                 try:
                     # -1 in Python arrays wraps around to end element,
                     # handle manually
